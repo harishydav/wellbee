@@ -17,7 +17,7 @@ const ContactPage = ({
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{backgroundImage: `url('/blog/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
           <h1 className="post-title">Get in Touch</h1>
-          <p>Let us help you find your next job &rarr;</p>
+          <p>Let us help save on your next surgery &rarr;</p>
         </div>
         <div>
           <form className="form-container" action="https://formsubmit.co/hello@upskillie.com" method="post">

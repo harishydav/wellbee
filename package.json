@@ -1,11 +1,11 @@
 {
-  "name": "Wellbee-blog",
-  "description": "blog for Wellbee",
+  "name": "wellbee",
+  "description": "Wellbee for surgery",
   "author": "Wellbee",
   "version": "1.6.0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harishydav/Wellbee-blog/issues"
+    "url": "https://github.com/harishydav/wellbee/issues"
   },
   "dependencies": {
     "gatsby": "^2.21.0",
@@ -31,14 +31,14 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/harishydav/Wellbee-blog#readme",
+  "homepage": "https://github.com/harishydav/wellbee#readme",
   "keywords": [
     "gatsby",
     "netlify cms"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harishydav/Wellbee-blog.git"
+    "url": "git+https://github.com/harishydav/wellbee.git"
   },
   "scripts": {
     "build": "gatsby clean && gatsby build",
