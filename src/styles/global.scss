@@ -105,7 +105,7 @@ a {
   align-items: center;
   font-weight: 300;
   a {
-    color: #888;
+    color: white;
     text-decoration: none;
     margin: 0 8px 0;
     &[aria-current] {
@@ -114,6 +114,7 @@ a {
     }
     &:hover {
       color: var(--primary-color);
+      font-weight: 400;
     }
     &:last-child {
       margin-right: 0;
@@ -144,6 +145,7 @@ a {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  margin-top: 3em;
 }
 .button {
   padding: 18px 27px;

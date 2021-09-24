@@ -2,8 +2,8 @@
   publish = "public"
   command = "npm run build"
   
-[build.environment]
+[ build.environment ]
   NODE_VERSION = "10"
 
-[[plugins]]
+[[ plugins ]]
   package = "netlify-plugin-gatsby-cache"

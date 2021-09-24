@@ -4,7 +4,11 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 import HeroHeader from "../components/heroHeader"
+import TreatmentsTable from "../components/treatmentsTable"
+
 import HeaderImage from "../../static/assets/header.jpeg"
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
 
 import "../styles/home-page.scss"
 
@@ -24,10 +28,10 @@ const IndexPage = ({
     backgroundImage: 'url('+HeaderImage+')',
     maxWidth:"100%",
     backgroundSize: "contain", 
-    backgroundPosition:"top center fixed",
+    // backgroundPosition:"center fixed",
     backgroundRepeat  : 'no-repeat',
   }} >
-    <Layout>
+    <Layout style={{maxWidth:"100%"}} >
         <Helmet>
           <title>{site.siteMetadata.title}</title>
           <meta name="description" content={site.siteMetadata.description} />
@@ -35,7 +39,42 @@ const IndexPage = ({
 
         <HeroHeader/>
 
-        <div style={{ height:800 }} />
+        <div style={{ height:300 }} />
+
+
+
+        <Paper style={{padding: "6%", }} >
+        <Typography style={{textAlign : "center"}} variant="h4" component="div" gutterBottom>
+        Treatment/Surgeries
+      </Typography>
+
+
+          <TreatmentsTable/>
+
+          {/* <table>
+            <tr>
+              <th>
+              </th>
+              <th>
+              </th>
+
+            </tr>
+            <tr>
+              <td>
+                Brain & Nerve Surgery
+              </td>
+              <td>
+                Brain & Nerve Surgery
+              </td>
+
+            </tr>
+
+
+        </table> */}
+
+        </Paper>
+
+
         <h2 style={{fontWeight:500}} >Blog Posts &darr;</h2>
         <div className="grids">
           {Posts}
