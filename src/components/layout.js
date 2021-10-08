@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 // import MenuIcon from '@mui/icons-material/Menu';
+import TreatmentsTable from "../components/treatmentsTable"
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -30,9 +31,11 @@ export default ({ children }) => {
 
       <AppBar position="absolute">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: .5 }}>
+          <Link to="/" style={{flex:.5, color:"white"}}>
+          <Typography onclick={() => window.location.href='/'} variant="h6" component="div" sx={{ flexGrow: .5 }}>
             Wellbee
           </Typography>
+          </Link>
           <Navigation />
         </Toolbar>
       </AppBar>
@@ -40,14 +43,11 @@ export default ({ children }) => {
 
       <div className="site-wrapper">
         <header style={{background :'transparent'}} className="site-header">
+        <div className="show-me"  style={{position: "absolute", width:"90%", textAlign:"center", top:"9%"}} >
+          <TreatmentsTable />
+        </div>
 
-          {/* <div className="site-title">
-            <Link to="/">
-              <img style={{height:'30px'}} src={Logo}/>
-              {data.site.siteMetadata.title}</Link>
-          </div> */}
         </header>
-
         {children}
         <footer className="site-footer">
           <p>&copy; {new Date().getFullYear()} Wellbee PVT. LTD </p>

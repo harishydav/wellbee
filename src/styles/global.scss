@@ -145,7 +145,7 @@ a {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  margin-top: 3em;
+  margin-top: 4em;
 }
 .button {
   padding: 18px 27px;
@@ -454,4 +454,16 @@ body.light {
 
 strong {
   font-weight: 600;
+}
+
+ .hover-me {
+  color: red;
+}
+
+.show-me  {
+  opacity: 0;
+  z-index: 10;
+}
+.hover-me:hover ~ .show-me {
+  opacity: 1;
 }
